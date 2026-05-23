@@ -6,7 +6,7 @@ import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.inventory.ShapedRecipe;
 
-public class CraftingListener {
+public class CraftingListener implements org.bukkit.event.Listener {
 
     private final CardsSMP plugin;
 
