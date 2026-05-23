@@ -111,7 +111,7 @@ public class CardAbilities {
     // ─── RESURRECTION ────────────────────────────────────────────
     public void activateResurrection(Player player) {
         double heal = getCfgDouble(CardType.RESURRECTION, "health-restore", 10.0);
-        double maxHp = player.getAttribute(org.bukkit.attribute.Attribute.MAX_HEALTH).getValue();
+        double maxHp = player.getAttribute(org.bukkit.attribute.Attribute.GENERIC_MAX_HEALTH).getValue();
         double newHp = Math.min(player.getHealth() + heal, maxHp);
         player.setHealth(newHp);
 
@@ -175,14 +175,14 @@ public class CardAbilities {
         double aoeRadius = getCfgDouble(CardType.HEART, "aoe-heal-radius", 5.0);
 
         // Heal self
-        double maxHp = player.getAttribute(org.bukkit.attribute.Attribute.MAX_HEALTH).getValue();
+        double maxHp = player.getAttribute(org.bukkit.attribute.Attribute.GENERIC_MAX_HEALTH).getValue();
         player.setHealth(Math.min(player.getHealth() + healAmount / 2, maxHp));
 
         // Heal allies nearby
         int healed = 0;
         for (Entity e : player.getNearbyEntities(aoeRadius, aoeRadius, aoeRadius)) {
             if (e instanceof Player ally && ally != player) {
-                double allyMax = ally.getAttribute(org.bukkit.attribute.Attribute.MAX_HEALTH).getValue();
+                double allyMax = ally.getAttribute(org.bukkit.attribute.Attribute.GENERIC_MAX_HEALTH).getValue();
                 ally.setHealth(Math.min(ally.getHealth() + healAmount, allyMax));
                 ally.getWorld().spawnParticle(Particle.HEART,
                         ally.getLocation().add(0, 2, 0), 8, 0.3, 0.3, 0.3, 0.1);
