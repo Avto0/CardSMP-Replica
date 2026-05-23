@@ -167,7 +167,7 @@ public class CardAbilities {
                 t.addPotionEffect(new PotionEffect(PotionEffectType.JUMP_BOOST, duration * 20, -10, false, false));
                 t.addPotionEffect(new PotionEffect(PotionEffectType.WEAKNESS, duration * 20, 1, false, false));
                 // Spawn cobweb-like particles
-                t.getWorld().spawnParticle(Particle.COBWEB, t.getLocation().add(0, 0.5, 0), 15, 0.3, 0.3, 0.3, 0);
+                t.getWorld().spawnParticle(Particle.BLOCK_CRACK, t.getLocation().add(0, 0.5, 0), 15, 0.3, 0.3, 0.3, 0);
                 webbed++;
             }
         }
@@ -476,7 +476,7 @@ public class CardAbilities {
         nearest.addPotionEffect(new PotionEffect(PotionEffectType.WEAKNESS, 60, 2, false, false));
 
         p.getWorld().playSound(p.getLocation(), Sound.ENTITY_WITHER_SHOOT, 1f, 1.2f);
-        nearest.getWorld().spawnParticle(Particle.CRIT_MAGIC, nearest.getLocation().add(0, 1, 0), 50, 0.5, 0.8, 0.5, 0.3);
+        nearest.getWorld().spawnParticle(Particle.CRIT, nearest.getLocation().add(0, 1, 0), 50, 0.5, 0.8, 0.5, 0.3);
         msg(p, "§7✦ §fSolitare §8— §7Dealt §e" + damage + "§7 damage to §e" + nearest.getName() + "§7!");
     }
 
