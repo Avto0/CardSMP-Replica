@@ -1,0 +1,65 @@
+# CardsSMP Configuration
+
+cards:
+  feather:
+    enabled: true
+    cooldown: 15 # seconds
+    launch-power: 2.5
+    glide-duration: 5 # seconds
+
+  freeze:
+    enabled: true
+    cooldown: 20
+    radius: 5.0
+    duration: 4 # seconds
+
+  shadowstep:
+    enabled: true
+    cooldown: 12
+    teleport-range: 20.0
+
+  resurrection:
+    enabled: true
+    cooldown: 60
+    health-restore: 10.0
+
+  vindicator:
+    enabled: true
+    cooldown: 18
+    axe-damage-bonus: 4.0
+    rage-duration: 6
+
+  dragon:
+    enabled: true
+    cooldown: 25
+    fireball-power: 2.0
+    fire-duration: 5
+
+  heart:
+    enabled: true
+    cooldown: 30
+    heal-amount: 8.0
+    aoe-heal-radius: 5.0
+
+  phantom:
+    enabled: true
+    cooldown: 20
+    invisibility-duration: 6
+
+  thunder:
+    enabled: true
+    cooldown: 22
+    lightning-count: 3
+
+  void:
+    enabled: true
+    cooldown: 35
+    pull-radius: 8.0
+    pull-strength: 1.5
+
+messages:
+  prefix: "&8[&5Cards&8] &r"
+  on-cooldown: "&cThis card is on cooldown! &7(%time%s remaining)"
+  card-activated: "&aActivated &e%card% &acard!"
+  no-card: "&cYou don't have a valid card in your hand!"
+  card-disabled: "&cThis card is disabled."

@@ -1,0 +1,20 @@
+name: CardsSMP
+version: 1.0.0
+main: dev.cardssmp.CardsSMP
+api-version: '1.21'
+description: Cards SMP - Ability cards plugin
+authors: [CardsSMP]
+
+commands:
+  givecard:
+    description: Give a card to a player
+    usage: /givecard <player> <card>
+    permission: cardssmp.admin
+  cards:
+    description: View available cards
+    usage: /cards
+
+permissions:
+  cardssmp.admin:
+    description: Admin access to card commands
+    default: op
