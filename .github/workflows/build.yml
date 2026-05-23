@@ -21,10 +21,11 @@ jobs:
 
       - name: Build with Maven
         run: mvn package -q
+        working-directory: CardsSMP-source/CardsSMP
 
       - name: Upload JAR
         uses: actions/upload-artifact@v4
         with:
           name: CardsSMP
-          path: target/CardsSMP-*.jar
+          path: CardsSMP-source/CardsSMP/target/CardsSMP-*.jar
           if-no-files-found: error
