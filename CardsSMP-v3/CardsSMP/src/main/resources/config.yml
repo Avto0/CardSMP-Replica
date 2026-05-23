@@ -1,0 +1,101 @@
+feather:
+  dashCooldown: 15
+
+freeze:
+  freezeSize: 5
+  freezeCooldown: 45
+  freezeHits: 5
+  freezeSlownessDuration: 3
+
+dismantle:
+  dismantleDisable: 5
+  dismantleCooldown: 30
+  dismantleHits: 15
+
+alchemist:
+  alchemistDuration: 15
+  alchemistCooldown: 50
+  plusSeconds: 15
+
+blood:
+  bloodrushSize: 7
+  bloodrushDuration: 5
+  bloodrushCooldown: 45
+  bleedingChance: 5
+
+ocean:
+  oceanDuration: 5
+  oceanSize: 5
+  oceanCooldown: 45
+  oceanHits: 10
+  drownDuration: 3
+
+conductor:
+  conductorSize: 7
+  conductorCooldown: 45
+  conductorHits: 10
+
+spider:
+  spiderSize: 10
+  spiderDuration: 5
+  spiderCooldown: 50
+
+glide:
+  glideBoostPower: 1.8
+  glideCooldown: 30
+  fallDistance: 10
+  glideDuration: 5
+
+health:
+  healthSize: 7
+  healthDuration: 10
+  healthCooldown: 60
+
+hop:
+  hopCooldown: 90
+  hopSize: 7
+  doubleJumpCooldown: 5
+
+phase:
+  phasingDuration: 5
+  phasingCooldown: 120
+  phasingChance: 10
+
+vindicator:
+  ravangerDuration: 15
+  ravangerCooldown: 90
+
+villager:
+  villagerDuration: 7
+  villagerGolemCount: 2
+  villagerSize: 15
+  villagerCooldown: 60
+
+spotlight:
+  spotlightSize: 15
+  spotlightCooldown: 30
+
+resurrection:
+  resurrectionSize: 10
+  resurrectionDuration: 8
+  resurrectionBuffDuration: 15
+  resurrectionCooldown: 60
+
+shadowstep:
+  shadowstepCooldown: 60
+  shadowstepDuration: 10
+  shadowstepChance: 25
+  teleportDamage: 2.0
+
+dragon:
+  dragonSize: 10
+  dragonCooldown: 80
+
+netherite:
+  netheriteDuration: 15
+  netheriteSize: 10
+  netheriteCooldown: 90
+
+solitare:
+  solitareCooldown: 60
+  solitareSize: 8

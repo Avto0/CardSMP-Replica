@@ -1,0 +1,19 @@
+name: CardsSMP
+version: 3.0.0
+main: dev.cardssmp.CardsSMP
+api-version: '1.21'
+description: Cards SMP Replica v3
+authors: [CardsSMP]
+
+commands:
+  givecard:
+    description: Give a card to a player
+    usage: /givecard <player> <card>
+    permission: cardssmp.admin
+  cards:
+    description: List all cards
+    usage: /cards
+
+permissions:
+  cardssmp.admin:
+    default: op
