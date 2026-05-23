@@ -167,7 +167,7 @@ public class CardAbilities {
                 t.addPotionEffect(new PotionEffect(PotionEffectType.JUMP_BOOST, duration * 20, -10, false, false));
                 t.addPotionEffect(new PotionEffect(PotionEffectType.WEAKNESS, duration * 20, 1, false, false));
                 // Spawn cobweb-like particles
-                t.getWorld().spawnParticle(Particle.BLOCK_CRACK, t.getLocation().add(0, 0.5, 0), 15, 0.3, 0.3, 0.3, 0);
+                
                 webbed++;
             }
         }
